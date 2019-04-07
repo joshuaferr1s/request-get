@@ -1,3 +1,6 @@
+![bundlephobia request-get](https://badgen.net/bundlephobia/min/request-get)
+![Semver request-get](https://img.shields.io/npm/v/request-get.svg)
+![License request-get](https://img.shields.io/npm/l/request-get.svg)
 # request-get
 
 Do you need a super lightweight http get request with no extra fluff? Then you have found the right package! request-get does one thing and that is send get requests and give you the response right back. No configuration - just simple url entry gives you a response object. And did we mention it is promise based?
