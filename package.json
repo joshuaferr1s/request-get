@@ -1,0 +1,14 @@
+{
+  "name": "request-get",
+  "description": "A super lightweight http(s) get request with no extra fluff.",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Joshua Ferris",
+  "homepage": "https://github.com/joshuaferr1s/request-get",
+  "bugs": {
+    "url" : "https://github.com/owner/project/issues",
+    "email" : "project@hostname.com"
+  },
+  "keywords": ["joshuaferr1s", "request", "get", "http", "https"],
+  "license": "MIT"
+}
