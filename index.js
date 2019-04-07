@@ -1,12 +1,13 @@
 const http = require('http');
 const https = require('https');
+const URL = require('url');
 
 const invalidURI = (uri) => {
   return !(uri.protocol && (uri.protocol == 'http:' || uri.protocol == 'https:') && uri.hostname);
 };
 
 const get = (uri) => {
-  const uri_o = new URL(uri);
+  const uri_o = URL.parse(uri);
   if (invalidURI(uri_o)) {
     return new Error(`Invalid URL: ${uri_o.href}`);
   }
