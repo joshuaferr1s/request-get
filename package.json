@@ -1,7 +1,7 @@
 {
   "name": "request-get",
   "description": "A super lightweight http(s) get request with no extra fluff.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "index.js",
   "author": "Joshua Ferris",
   "homepage": "https://github.com/joshuaferr1s/request-get",
