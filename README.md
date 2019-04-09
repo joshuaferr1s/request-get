@@ -5,6 +5,8 @@
 
 Do you need a super lightweight http get request with no extra fluff? Then you have found the right package! request-get does one thing and that is send get requests and give you the response right back. No configuration - just simple url entry gives you a response object. And did we mention it is promise based?
 
+Right now a get request will follow a maximum of 10 redirects - at some point in the future this will be configurable by an options parameter.
+
 ## Examples
 
 ```js
