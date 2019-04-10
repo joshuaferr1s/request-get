@@ -21,6 +21,9 @@ const get = (uri, options = {}) => {
             redirects += 1;
             return resolve(get(res.headers.location));
           } else {
+            if(redirects >= 10) {
+              return reject(new Error('Exceeded maxRedirects. Probably stuck in a redirect loop ' + uri));
+            }
             redirects = 0;
             return resolve(res);
           }
@@ -35,6 +38,9 @@ const get = (uri, options = {}) => {
             redirects += 1;
             return resolve(get(res.headers.location));
           } else {
+            if(redirects >= 10) {
+              return reject(new Error('Exceeded maxRedirects. Probably stuck in a redirect loop ' + uri));
+            }
             redirects = 0;
             return resolve(res);
           }
